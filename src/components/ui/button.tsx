@@ -9,7 +9,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-[var(--shadow-festive)]",
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
@@ -18,6 +18,10 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        festive: "bg-gradient-to-r from-saffron to-golden text-white hover:shadow-[var(--shadow-festive)] transition-all duration-300 font-semibold",
+        sweet: "bg-gradient-to-r from-rose to-pista text-white hover:shadow-[var(--shadow-sweet)] transition-all duration-300",
+        cart: "bg-saffron text-white hover:bg-saffron-light shadow-[var(--shadow-elegant)] font-medium",
+        whatsapp: "bg-green-500 text-white hover:bg-green-600 rounded-full shadow-lg",
       },
       size: {
         default: "h-10 px-4 py-2",
